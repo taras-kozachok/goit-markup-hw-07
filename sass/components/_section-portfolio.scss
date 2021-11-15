@@ -47,9 +47,9 @@
   width: calc(100% / 3 - 30px);
   margin-left: 30px;
   margin-bottom: 30px;
-}
-.item-portfolio:hover .overlay-box {
-  transform: translateY(0%);
+  &:hover .overlay-box {
+    transform: translateY(0%);
+  }
 }
 
 .portfolio-project-item:focus .overlay-box {
@@ -58,10 +58,10 @@
 .portfolio-project-item {
   display: inline-block;
   transition: box-shadow 1000ms var(--time-func);
-}
-.portfolio-project-item:focus,
-.portfolio-project-item:hover {
-  box-shadow: 0px 4px 4px 0px #00000040;
+  &:focus,
+  &:hover {
+    box-shadow: 0px 4px 4px 0px #00000040;
+  }
 }
 
 .image-portfolio {

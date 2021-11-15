@@ -5,25 +5,24 @@
   line-height: 1.19;
   letter-spacing: 0.03em;
   transition: color 250ms var(--time-func);
+  &:hover {
+    color: var(--accent-color);
+  }
 }
 
-.logo-name-header {
+.logo-name__header {
   color: var(--primary-black-color);
   margin-right: 93px;
   padding-top: 24px;
   padding-bottom: 25px;
 }
 
-.logo-name-footer {
+.logo-name__footer {
   color: var(--primary-white-color);
   display: inline-block;
   margin-bottom: 20px;
 }
 
 .logo-web {
-  color: var(--accent-color);
-}
-
-.logo-name:hover {
   color: var(--accent-color);
 }

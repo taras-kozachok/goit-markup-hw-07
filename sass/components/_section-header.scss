@@ -4,42 +4,41 @@
   border-bottom: 1px solid#ececec;
 }
 
-.header-nav {
+.header__nav {
   display: flex;
   align-items: center;
 }
 
-.header-container {
+.header__container {
   display: flex;
   align-items: center;
 }
 
-.menu-item:not(:last-child) {
+.header-menu__item:not(:last-child) {
   margin-right: 50px;
 }
-.site-nav {
+.header__nav {
   display: flex;
+  & .link {
+    color: var(--title-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    transition: color 250ms var(--time-func);
+  }
+  & .link:hover,
+  & .link:focus {
+    color: var(--accent-color);
+  }
+  & .link.current {
+    color: var(--accent-color);
+    transition: filter 250ms var(--time-func);
+
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  }
 }
 
-.site-nav .link {
-  color: var(--title-text-color);
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  transition: color 250ms var(--time-func);
-}
-
-.site-nav .link:hover,
-.site-nav .link:focus {
-  color: var(--accent-color);
-}
-.site-nav .link.current {
-  color: var(--accent-color);
-  transition: filter 250ms var(--time-func);
-
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-}
 .current.link::after {
   position: absolute;
   content: '';
@@ -51,32 +50,31 @@
   border-radius: 2px;
 }
 /* Контакты в шапке */
-.link-contact .link {
-  color: var(--title-text-color);
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-}
-.link-contact {
+
+.header-contact__link {
   list-style: none;
   display: flex;
   margin-left: auto;
+  & .link {
+    color: var(--title-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--primary-text-color);
+    transition: color 250ms var(--time-func);
+  }
+  & .link:hover,
+  & .link:focus {
+    color: var(--accent-color);
+  }
 }
 
-.link-contact .link {
-  color: var(--primary-text-color);
-  transition: color 250ms var(--time-func);
-}
-.link-contact .link:hover,
-.link-contact .link:focus {
-  color: var(--accent-color);
-}
 .connect-item:not(:last-child) {
   margin-right: 30px;
 }
 
-.connect-item-all {
+.connect-item__all {
   display: block;
   align-items: center;
   padding-top: 32px;

@@ -15,9 +15,9 @@
 
 .clients-icon-background {
   margin-right: 30px;
-}
-.clients-icon-background:last-child {
-  margin-right: 0pc;
+  &:last-child {
+    margin-right: 0pc;
+  }
 }
 
 .item-box {
@@ -30,11 +30,12 @@
   align-items: center;
   justify-content: center;
   transition: border-color 250ms var(--time-func);
+  &:hover,
+  &:focus {
+    border-color: var(--accent-color);
+  }
 }
-.item-box:hover,
-.item-box:focus {
-  border-color: var(--accent-color);
-}
+
 .item-box:focus .clients-icon,
 .item-box:hover .clients-icon {
   fill: var(--accent-color);

@@ -23,16 +23,17 @@ footer {
 .footer-list {
   list-style: none;
   color: var(--primary-white-color);
+  & .footer-link {
+    color: var(--footer-adr-color);
+    text-decoration: none;
+    transition: color 250ms var(--time-func);
+  }
+  & :hover,
+  & :focus {
+    color: var(--accent-color);
+  }
 }
-.footer-list .footer-link {
-  color: var(--footer-adr-color);
-  text-decoration: none;
-  transition: color 250ms var(--time-func);
-}
-.footer-list :hover,
-.footer-list :focus {
-  color: var(--accent-color);
-}
+
 .footer-adress {
   font-style: inherit;
   font-size: 14px;
@@ -59,6 +60,16 @@ footer {
 .bottom-icon-list-item {
   width: 44px;
   height: 44px;
+  & .link:hover,
+  & .link:focus {
+    background-color: var(--accent-color);
+  }
+  & .link {
+    fill: currentColor;
+  }
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
 }
 .icon-link {
   width: 100%;
@@ -72,18 +83,6 @@ footer {
     background-color 250ms var(--time-func);
 }
 
-.bottom-icon-list-item:not(:last-child) {
-  margin-right: 10px;
-}
-
-.bottom-icon-list-item .link {
-  fill: currentColor;
-}
-
-.bottom-icon-list-item .link:hover,
-.bottom-icon-list-item .link:focus {
-  background-color: var(--accent-color);
-}
 .form-footer {
   width: 570px;
   height: 86px;

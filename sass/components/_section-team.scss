@@ -16,17 +16,17 @@
   background-color: var(--secondary-bcg-color);
   padding-top: 94px;
   padding-bottom: 94px;
+  & .team-title {
+    color: var(--title-text-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 10px;
+  }
 }
 
-.section-team .team-title {
-  color: var(--title-text-color);
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.19;
-  text-align: center;
-  letter-spacing: 0.03em;
-  margin-bottom: 10px;
-}
 .team-list-text {
   font-size: 16px;
   line-height: 1.19;
