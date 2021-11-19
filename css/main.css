@@ -111,36 +111,6 @@ ul {
   fill: var(--primary-white-color);
 }
 
-.logo-name {
-  font-family: var(--secondary-font);
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  transition: color 250ms var(--time-func);
-}
-
-.logo-name:hover {
-  color: var(--accent-color);
-}
-
-.logo-name__header {
-  color: var(--primary-black-color);
-  margin-right: 93px;
-  padding-top: 24px;
-  padding-bottom: 25px;
-}
-
-.logo-name__footer {
-  color: var(--primary-white-color);
-  display: inline-block;
-  margin-bottom: 20px;
-}
-
-.logo-web {
-  color: var(--accent-color);
-}
-
 /* Контакты в футере */
 footer {
   background-color: var(--footer-bcg-color);
@@ -591,6 +561,37 @@ footer {
   margin-right: 10px;
 }
 
+.logo-name__header {
+  text-decoration: none;
+  color: var(--primary-black-color);
+  margin-right: 93px;
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+
+.logo-name__footer {
+  color: var(--primary-white-color);
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.logo-name {
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  transition: color 250ms var(--time-func);
+}
+
+.logo-name:hover {
+  color: var(--accent-color);
+}
+
+.logo-web {
+  color: var(--accent-color);
+}
+
 .button-hero {
   display: block;
   margin: 0 auto;
@@ -684,7 +685,7 @@ button.secondery {
   margin-bottom: -30px;
 }
 
-.team-list {
+.team-icon {
   background-color: var(--primary-white-color);
   width: calc(100% / 4 - 30px);
   margin-left: 30px;

@@ -1,16 +1,5 @@
-.logo-name {
-  font-family: var(--secondary-font);
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  transition: color 250ms var(--time-func);
-  &:hover {
-    color: var(--accent-color);
-  }
-}
-
 .logo-name__header {
+  text-decoration: none;
   color: var(--primary-black-color);
   margin-right: 93px;
   padding-top: 24px;
@@ -22,7 +11,17 @@
   display: inline-block;
   margin-bottom: 20px;
 }
-
+.logo-name {
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  transition: color 250ms var(--time-func);
+  &:hover {
+    color: var(--accent-color);
+  }
+}
 .logo-web {
   color: var(--accent-color);
 }
